@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Abril+Fatface&display=swap');
+
+ body { font-family: 'Roboto Slab', sans-serif; font-size: 120%}
+
+h1, h2, h3 {font-family: 'Abril Fatface'}
+
+
+:root {
+  --mainbg: white; /* light color */
+  --maintx: #5A5A5A; /* dark color */
+
+  --broken: darkred;
+  --border: transparent;
+  --light: brightness(110%);
+  --dark: brightness(80%);
+  --darker: brightness(70%);
+}
+
+select#listbox-choice.macro-listbox {width: 70%}
+
+a.link-broken {color: var(--broken)}
+
+#ui-bar-history [id|="history"] {border-radius: 100px;}
+
+#ui-bar {border-color: var(--border) !important;
+box-shadow: 0px 2px 20px var(--maintx);}
+
+#ui-dialog {box-shadow: 2px 2px 20px var(--maintx);}
+
+
+#menu-item-saves > a {text-decoration:none !important; padding: 5px !important }
+
+#menu-item-saves > a:hover {text-decoration:none !important; border: solid 1px var(--maintx) !important; filter: var(--light) !important;}
+
+#menu-item-restart > a {text-decoration:none !important; padding: 5px !important }
+
+#menu-item-restart > a:hover {text-decoration:none !important; border: solid 1px var(--maintx) !important; filter: var(--light) !important; }
+
+
+body {
+	color: var(--maintx);
+	background-color: var(--mainbg);
+	
+}
+a {
+	color: var(--maintx);
+	text-decoration: underline !important;
+}
+a:hover {
+	color: var(--maintx);
+}
+span.link-disabled {
+	color: var(--maintx);
+   filter: var(--dark);
+
+}
+button {
+	color: var(--maintx);
+	background-color: var(--mainbg);
+	border-color: var(--maintx);
+	filter: var(--light);
+}
+button:hover {
+	background-color: var(--mainbg);
+	border-color:  var(--maintx);
+}
+button:disabled {
+	background-color: var(--mainbg);
+	border-color:  var(--maintx);
+	  filter: var(--dark);
+}
+input, select, textarea {
+	background-color: var(--mainbg);
+	color: var(--maintx);
+	border-color: var(--maintx);
+	filter: var(--light);
+
+}
+input:not(:disabled):focus, select:not(:disabled):focus, textarea:not(:disabled):focus,
+input:not(:disabled):hover, select:not(:disabled):hover, textarea:not(:disabled):hover {
+	background-color: var(--mainbg);
+	border-color: var(--maintx);
+}
+hr {
+	border-color: var(--maintx);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.error-view {
+	background-color: var(--mainbg);
+	border-left-color: var(--maintx);
+}
+.error-view > .error-source:not([hidden]) {
+	background-color: var(--mainbg);
+}
+
+#ui-bar {
+	background-color: var(--mainbg);
+	border-color: var(--maintx);
+	filter: var(--light);
+}
+#ui-bar hr {
+	border-color: var(--border);
+}
+#ui-bar-toggle,
+#ui-bar-history [id|="history"] {
+	color: var(--maintx);
+	border-color: var(--maintx);
+}
+
+#ui-bar-toggle:hover,
+#ui-bar-history [id|="history"]:hover {
+	background-color: var(--mainbg);
+	border-color: var(--maintx);
+}
+#ui-bar-history [id|="history"]:disabled {
+	color: var(--maintx);
+	background-color: var(--mainbg);
+	border-color: var(--border);
+ filter: var(--darker);
+}
+
+
+#menu ul {
+	border-color: var(--border);
+}
+#menu li:not(:first-child) {
+	border-top-color: var(--border);
+}
+#menu li a {
+	color: var(--maintx);
+}
+#menu li a:hover {
+	background-color: var(--mainbg);
+	border-color: var(--border);
+}
+
+/* Default dialog styling */
+#ui-overlay {
+	background-color: var(--mainbg);
+}
+#ui-dialog-titlebar {
+	background-color: var(--mainbg);
+}
+#ui-dialog-close:hover {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+#ui-dialog-body {
+	background-color: var(--mainbg);
+	border-color: var(--border);
+}
+#ui-dialog-body hr {
+	background-color: var(--mainbg);
+}
+
+/* List-based dialog styling */
+#ui-dialog-body.list li:not(:first-child) {
+	border-top-color: var(--border);
+}
+#ui-dialog-body.list li a {
+	color: var(--maintx);
+}
+#ui-dialog-body.list li a:hover {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+
+/* Saves dialog styling */
+#ui-dialog-body.saves > *:not(:first-child),
+#ui-dialog-body.saves tr:not(:first-child) {
+	border-top-color: var(--border);
+}
+#ui-dialog-body.saves .empty {
+	color: var(--maintx);
+}
+
+/* Settings dialog styling */
+#ui-dialog-body.settings button[id|="setting-control"] {
+	color: var(--maintx);
+	border-color:   var(--border);
+}
+#ui-dialog-body.settings button[id|="setting-control"]:hover {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+#ui-dialog-body.settings button[id|="setting-control"].enabled {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+#ui-dialog-body.settings button[id|="setting-control"].enabled:hover {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+
+/* Debug bar styling */
+#debug-bar,
+#debug-bar-toggle,
+#debug-bar-watch {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+#debug-bar-watch div {
+	color: var(--maintx);
+}
+#debug-bar-toggle,
+#debug-bar-watch-toggle,
+#debug-bar-views-toggle {
+	color: var(--maintx);
+	border-color:  var(--border);
+}
+#debug-bar-toggle:hover,
+#debug-bar-watch-toggle:hover,
+#debug-bar-views-toggle:hover {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+#debug-bar-watch:not([hidden]) ~ div #debug-bar-watch-toggle,
+html[data-debug-view] #debug-bar-views-toggle {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+#debug-bar-watch:not([hidden]) ~ div #debug-bar-watch-toggle:hover,
+html[data-debug-view] #debug-bar-views-toggle:hover {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+
+/* Debug view styling */
+html:not([data-debug-view]) #debug-view-toggle {
+	color: var(--maintx);
+	border-color:  var(--border);
+}
+html:not([data-debug-view]) #debug-view-toggle:hover {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+html[data-debug-view] #debug-view-toggle {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+html[data-debug-view] #debug-view-toggle:hover {
+	background-color: var(--mainbg);
+	border-color:  var(--border);
+}
+html[data-debug-view] .debug {
+	background-color: var(--mainbg);
+}
+html[data-debug-view] .debug.hidden,
+html[data-debug-view] .debug.hidden .debug {
+	background-color: var(--mainbg);
+} 
