@@ -291,7 +291,7 @@ g14
 I00
 sg15
 (lp102
-F410.0
+F411.67171717171715
 aF156.83585858585857
 asg17
 (itiddlywiki
@@ -299,7 +299,7 @@ Tiddler
 p103
 (dp104
 g21
-V\u000a<<listbox "$choice" autoselect>>\u000a<<option "Random">>\u000a	<<option "Spring Green">>\u000a	<<option "Ice Blue">>\u000a	<<option "Construction Orange">>\u000a	<<option "Yellow Sticky">>\u000a	<<option "Fairy Pink">>\u000a	<<option "Paper White">>\u000a	<<option "Peach Soda">>\u000a\u000a<</listbox>>\u000a\u000a<<button "OK">><<goto $choice>><</button>>\u000a
+V\u000a<<listbox "$choice" autoselect>>\u000a<<option "Random">>\u000a	<<option "Spring Green">>\u000a	<<option "Ice Blue">>\u000a	<<option "Construction Orange">>\u000a	<<option "Yellow Sticky">>\u000a	<<option "Fairy Pink">>\u000a	<<option "Paper White">>\u000a	<<option "Peach Soda">>\u000a	<<option "Template">>\u000a<</listbox>>\u000a\u000a<<button "OK">><<goto $choice>><</button>>\u000a
 p105
 sg23
 VStoryCaption
@@ -309,9 +309,9 @@ g26
 ((I2022
 I5
 I19
-I0
+I1
+I22
 I53
-I15
 I3
 I139
 I1
@@ -403,7 +403,7 @@ Tiddler
 p135
 (dp136
 g21
-VColor themes for Twine's Sugarcube 2 engine, based on the Bleached theme, with fonts from Google Fonts. <br><br>
+VColor themes for Twine's Sugarcube 2 story format, based on the [[Bleached|http://www.motoslave.net/sugarcube/2/]] theme, with fonts from Google Fonts. <br><br>
 p137
 sg23
 VPassageHeader
@@ -413,9 +413,9 @@ g26
 ((I2022
 I5
 I19
-I0
-I55
 I1
+I19
+I31
 I3
 I139
 I1
@@ -750,10 +750,62 @@ tp239
 (dp240
 tp241
 Rp242
+sbsa(dp243
+g14
+I00
+sg15
+(lp244
+F173.85858585858585
+aF585.9368686868687
+asg17
+(itiddlywiki
+Tiddler
+p245
+(dp246
+g21
+V<span class="oneliner">Create your own themes with this template.</span>\u000a\u000a<a href="./template.css" target="_blank">Download CSS</a>\u000a\u000a<style>\u000a@import url('./template.css')\u000a</style>\u000a
+p247
+sg23
+VTemplate
+p248
+sg25
+g26
+((I2022
+I5
+I19
+I1
+I22
+I27
+I3
+I139
+I1
+tp249
+(dp250
+tp251
+Rp252
+sg31
+(lp253
+Vgo
+p254
+asg33
+g26
+((I2022
+I5
+I19
+I1
+I22
+I3
+I3
+I139
+I1
+tp255
+(dp256
+tp257
+Rp258
 sbsasS'scale'
-p243
+p259
 F1.1963746223564955
 sS'snapping'
-p244
+p260
 I00
 ss.
