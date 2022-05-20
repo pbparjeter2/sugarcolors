@@ -6,8 +6,8 @@ h1, h2, h3 {font-family: 'Pacifico'}
 
 
 :root {
-  --mainbg: #FFCCFF; /* light color */
-  --maintx: #6F366F; /* dark color */
+  --mainbg: #FFABCA; /* light color */
+  --maintx: #BC4E78; /* dark color */
 
   --broken: darkred;
   --border: transparent;
